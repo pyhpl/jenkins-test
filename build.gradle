@@ -19,10 +19,16 @@ group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
-bootJar {
-	baseName = 'jenkins-test'
-	version = '0.1'
+bootJar { // 生成可执行jar。
+	launchScript ()
 }
+
+task a() {
+	print "hello"
+}
+
+archivesBaseName = 'jenkins-test' // jar包名称。
+version = '1.0' // jar包版本。
 
 repositories {
 	mavenCentral()
