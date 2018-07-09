@@ -23,10 +23,6 @@ bootJar { // 生成可执行jar。
 	launchScript ()
 }
 
-task a() {
-	print "hello"
-}
-
 archivesBaseName = 'jenkins-test' // jar包名称。
 version = '1.0' // jar包版本。
 
